@@ -201,9 +201,8 @@ a {
 
 /* Це спеціально зроблено. Я знаю, що можно було в один клас, але мені
 так поки більш зрозуміло */
-.header-adress-logo:hover .adress-mail-header{
-  
-}
+.li-class:focus,
+ .adress-mail-header:focus,
  .adress-mail-header:hover,
 .adress-tel-header:hover,
 .adress-tel-header:focus,
@@ -214,7 +213,7 @@ a {
 .adress-mail-footer:hover,
 .adress-mail-footer:focus {
   color: var(--accent-color);
-  
+  fill: var(--accent-color);  
  }
 .navigation-item.current:hover,
 .navigation-item.current:focus,
@@ -485,15 +484,20 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.our-team-socil-item:hover {
-  fill: #ffffff;
-}
+
 .li-class:hover .our-team-socil-item{
+  fill: white;
+}
+.li-class:focus .our-team-socil-item{
   fill: white;
 }
 .li-class:hover{
   background-color: var(--accent-color);
 }
+.li-class:focus{
+  background-color: var(--accent-color);
+}
+
 .li-class:not(:last-child) {
   margin-right: 10px;
 }
@@ -506,7 +510,10 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
   margin-bottom: 30px;
   justify-content: center;
 }
-
+.our-team-socil-links:focus .li-class-link{
+  color: var(--accent-color);
+  fill:var(--accent-color)
+}
 /*team-end--*/
 
 /* regular cliens */
