@@ -58,7 +58,7 @@ href="./imagine/symbol-defs.svg#icon-tell"></use>
                     <h1 class="section-h1"> эффективные решения<br>
 для вашего бизнеса</h1>
                     <button class="modal-btn-header"
-type="button">Заказать услугу</button>
+type="button" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
 
@@ -301,7 +301,16 @@ href="./imagine/symbol-defs.svg#icon-logo6"></use>
         </div>
     
     </footer>
-
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modalka"> 
+        <batton type="button" class="modalka-btn" data-modal-close><svg class="close-svg">
+            <use
+    href="./imagine/symbol-defs.svg#close"></use>
+        </svg></batton> 
+    </div>   
+    </div>
+    <script src="./modal.js"></script>
 
 </body>
 
